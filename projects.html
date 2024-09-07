@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="color-scheme" content="light only" />
-    <meta name="description" content="This website is for projects developed or contributed by HaqtanEfe" />
+    <meta name="description" content="This website is for projects developed or contributed by HaqtanEfe." />
     <meta property="og:site_name" content="Projects - haktanefe.com" />
     <meta property="og:title" content="Projects - haktanefe.com" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="This website is for projects developed or contributed by HaqtanEfe" />
-    <meta property="og:image" content="https://haqtane2.carrd.co/assets/images/card.jpg?v=5fcdbd9e" />
+    <meta property="og:description" content="This website is for projects developed or contributed by HaqtanEfe." />
+    <meta property="og:image" content="https://haqtane2.carrd.co/assets/images/card.jpg?v=6f78fd20" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="800" />
@@ -1037,6 +1037,81 @@
         width: 100%;
       }
 
+      .video {
+        position: relative;
+      }
+
+      .video video {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: top;
+      }
+
+      .video .frame {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        vertical-align: top;
+      }
+
+      .video .frame:before {
+        content: '';
+        display: block;
+        width: 100%;
+      }
+
+      .video .frame iframe {
+        bottom: 0px;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: #000000;
+      }
+
+      .video.full video {
+        display: block;
+      }
+
+      .video.full:first-child video {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+
+      .video.full:last-child video {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+
+      .video.full .frame {
+        display: block;
+      }
+
+      .video.full:first-child .frame {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+
+      .video.full:last-child .frame {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+      }
+
+      #video01 video {
+        width: 27rem;
+      }
+
+      #video01 .frame {
+        width: 27rem;
+      }
+
+      #video01 .frame:before {
+        padding-top: 56.25%;
+      }
+
       .links {
         display: flex;
         justify-content: var(--flex-alignment);
@@ -1105,6 +1180,10 @@
       }
 
       #links03 .n01 a:hover {
+        color: #FFE2DB;
+      }
+
+      #links04 .n01 a:hover {
         color: #FFE2DB;
       }
 
@@ -1454,6 +1533,14 @@
           width: auto;
         }
 
+        #video01 video {
+          width: 27rem;
+        }
+
+        #video01 .frame {
+          width: 27rem;
+        }
+
         .links.style1 {
           gap: 2.5rem;
           font-size: 1em;
@@ -1609,7 +1696,7 @@
                 <p id="text04" class="style3">You can see the projects I developed or contributed below! If you have any questions regarding them, you can dm me on discord or send me an email!</p>
                 <ul id="buttons01" class="style1 buttons">
                   <li>
-                    <a href="/cdn-cgi/l/email-protection#066473756f68637575466e676d7267686360632865696b" class="button n01">
+                    <a href="/cdn-cgi/l/email-protection#91f3e4e2f8fff4e2e2d1f9f0fae5f0fff4f7f4bff2fefc" class="button n01">
                       <svg aria-labelledby="icon-title">
                         <title id="icon-title">Email</title>
                         <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
@@ -1634,12 +1721,19 @@
                     <strong>Role:</strong> Scripter </span>
                   <span class="p">
                     <strong>My Contributions:</strong>
-                    <br /> * <strong>Skin System Integration:</strong> Developed and implemented a dynamic system for displaying and managing custom skins within the game. <br /> * <strong>System Design:</strong> Designed the architecture for the skin management system to allow seamless integration of new skins and easy updates. <br /> * <strong>Optimization:</strong> Ensured the system was optimized for performance to maintain a smooth gameplay experience. </span>
+                    <br /> * <strong>Skin System Integration:</strong> Developed and implemented a dynamic system for displaying and managing custom skins within the game. </span>
+                  <span class="p">* <strong>System Design:</strong> Designed the architecture for the skin management system to allow seamless integration of new skins and easy updates. </span>
+                  <span class="p">* <strong>Optimization:</strong> Ensured the system was optimized for performance to maintain a smooth gameplay experience. </span>
                 </p>
-                <div id="image03" class="style2 image" data-position="center">
+                <div id="image02" class="style2 image" data-position="center">
                   <span class="frame">
                     <img src="images/project-images/1.png" alt="" />
                   </span>
+                </div>
+                <div id="video01" class="video">
+                  <div class="frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/b1RunP7A-kw?autoplay=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0" allowfullscreen="1"></iframe>
+                  </div>
                 </div>
                 <ul id="links02" class="style1 links">
                   <li class="n01">
@@ -1675,10 +1769,15 @@
                     <br /> Cutscene for Chapter 1: <em>Scripted a cutscene where an NPC interacts with the environment, such as moving its arm to close a door. This cutscene enhances the narrative and adds immersive elements to the game.</em>
                   </span>
                 </p>
-                <div id="image04" class="style2 image" data-position="center">
+                <div id="image02" class="style2 image" data-position="center">
                   <span class="frame">
                     <img src="images/project-images/2.png" alt="" />
                   </span>
+                </div>
+                <div id="video01" class="video">
+                  <div class="frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/GLZOycwHLqE?autoplay=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0" allowfullscreen="1"></iframe>
+                  </div>
                 </div>
                 <ul id="links03" class="style1 links">
                   <li class="n01">
@@ -1692,8 +1791,44 @@
           <div id="container05" class="style1 container default">
             <div class="wrapper">
               <div class="inner">
-                <h2 id="text09" class="style2">Violence</h2>
+                <h2 id="text09" class="style2">Car Thing Reborn</h2>
                 <p id="text10" class="style3">
+                  <span class="p">
+                    <strong>Description:</strong> Car Thing Reborn is an exhilarating racing game on Roblox featuring various racing mechanics, AI opponents, and a user-friendly interface. Players can enjoy competitive racing and immersive driving experiences. </span>
+                  <span class="p">
+                    <strong>Role:</strong> Systems Programmer </span>
+                  <span class="p">
+                    <strong>My Contributions:</strong>
+                    <br /> * <strong>Racing System:</strong>
+                    <br /> Developed a comprehensive racing system that drives the core gameplay experience. </span>
+                  <span class="p">* <strong>Main Menu System:</strong>
+                    <br /> Designed and programmed the main menu system, providing players with a smooth and intuitive navigation experience. <br /> * <strong>AI System for Bot Cars:</strong>
+                    <br /> Developed an AI system to control bot cars, adding a layer of challenge and excitement to the racing experience. </span>
+                </p>
+                <div id="image02" class="style2 image" data-position="center">
+                  <span class="frame">
+                    <img src="images/project-images/3.png" alt="" />
+                  </span>
+                </div>
+                <div id="video01" class="video">
+                  <div class="frame">
+                    <iframe src="https://www.youtube-nocookie.com/embed/2PiFsQ1oK_4?autoplay=0&amp;rel=0&amp;loop=0&amp;controls=1&amp;cc_load_policy=0" allowfullscreen="1"></iframe>
+                  </div>
+                </div>
+                <ul id="links01" class="style1 links">
+                  <li class="n01">
+                    <a href="https://www.roblox.com/games/17701494100/Car-Thing-Reborn">Game link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr id="divider05" class="style1">
+          <div id="container06" class="style1 container default">
+            <div class="wrapper">
+              <div class="inner">
+                <h2 id="text08" class="style2">Violence</h2>
+                <p id="text12" class="style3">
                   <span class="p">
                     <strong>Description:</strong>
                     <em>Violence</em> is an action-packed Roblox game featuring intense combat and a variety of weapons. The game challenges players with dynamic gameplay and engaging weapon mechanics. </span>
@@ -1706,12 +1841,12 @@
                 </p>
                 <div id="image02" class="style2 image" data-position="center">
                   <span class="frame">
-                    <img src="images/project-images/3.png" alt="" />
+                    <img src="images/project-images/4.png" alt="" />
                   </span>
                 </div>
-                <ul id="links01" class="style1 links">
+                <ul id="links04" class="style1 links">
                   <li class="n01">
-                    <a href="https://www.roblox.com/games/6258962270/HORROR-Psychiatric-Complex">Game link</a>
+                    <a href="https://www.roblox.com/games/12868736700/violence">Game link</a>
                   </li>
                 </ul>
               </div>
@@ -1738,6 +1873,11 @@
                 </ul>
               </div>
             </div>
+          </div>
+          <div id="credits" class="icc-credits">
+            <span>
+              <a href="https://carrd.co/build?ref=auto">Made with Carrd</a>
+            </span>
           </div>
         </div>
       </div>
